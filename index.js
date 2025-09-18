@@ -69,7 +69,8 @@ export const handler = async (event) => {
     console.log(`Created zip file: ${zipFilePath}`);
 
     // Step 3: Upload zip to S3
-    const bucketName = 'concept-cdn';
+    const bucketName = 'YOUR_BUCKET_NAME';
+
     const s3Key = `layers/${layerName}.zip`;
     
     console.log(`Uploading zip file to S3: s3://${bucketName}/${s3Key}`);
